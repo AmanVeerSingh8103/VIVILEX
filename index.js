@@ -28,9 +28,9 @@ app.use((req,res,next)=>{
 
 // app.use(express.static(path.join(__dirname + "/public")))
 app.use(express.json())
-app.use('/api', require("./Routes/CreateUser"));
-app.use('/api', require("./Routes/DisplayData"));
-app.use('/api', require("./Routes/OrderData"));
+app.use('/api', require("./Routes/CreateContactInfo"));
+app.use('/api', require("./Routes/AllData"));
+app.use('/api', require("./Routes/Mailer"));
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
